@@ -3,13 +3,16 @@
     min-height: 470px;
     padding: 70px 0 67px;
     &__wrapper{
-        margin-top: 65px;
+        margin-top: 40px;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
     &__item{
-        max-width: 225px;
+        max-width: 240px;
+        padding: 0 10px;
+        margin: 0 auto;
+        margin-top: 25px;
     }
     &__icon{
         display: block;

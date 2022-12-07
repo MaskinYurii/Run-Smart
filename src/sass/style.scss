@@ -6,7 +6,6 @@
 
 .container{
     max-width: 942px;
-    width: 100%;
     margin: 0 auto;
 }
 
@@ -14,4 +13,5 @@
 @import 'blocks/promo';
 @import 'blocks/buttons';
 @import 'blocks/adventages';
-@import 'blocks/titles'
+@import 'blocks/titles';
+@import 'blocks/media'

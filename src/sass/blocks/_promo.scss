@@ -21,12 +21,15 @@
         color: #fff
     }
     &__icons{
-        margin-top: 60px;
+        margin-top: 40px;
         display: flex;
-        width: 424px;
+        max-width: 424px;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &__icon{
+        padding: 0 15px;
+        margin-top: 20px;
         img{
             margin: 0 auto;
             display: block;
