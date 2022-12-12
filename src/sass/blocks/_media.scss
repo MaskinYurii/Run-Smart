@@ -32,7 +32,21 @@
         display: block;
     }
     
-
+    .reviews{
+        &-block{
+            &__item{
+                flex-direction: column;
+                align-items: center
+            }
+            &__content{
+                text-align: center;
+                margin-top: 16px;
+            }
+        }
+        .reviews-block__image{
+            margin: 0 auto;
+        }
+    }
 
 }
 
@@ -127,6 +141,18 @@
     .feed-form{
         width: 280px;
     }
+    .footer{
+        address{
+            font-size: 16px;
+        }
+        a{
+            font-size: 14px;
+        }
+        &__social-item{
+            width: 35px;
+        }
+        
+    }
 }
 @media (max-width: 320px){
     .header{
@@ -205,6 +231,18 @@
             height: 42px;
             font-size: 13px;
         }
+    }
+
+    .catalog{
+        &-item{
+            &__footer{
+                flex-direction: column;
+                align-items: center;
+            }
+            &__old-price{
+                text-align: center;
+            }
+        }    
     }
 }
 

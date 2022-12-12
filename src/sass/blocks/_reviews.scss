@@ -1,0 +1,33 @@
+.reviews{
+    padding: 0 0 60px 0;
+    min-height: 970px;
+    &-block{
+        margin-top: 60px;
+        &__item{
+            margin-top: 60px;
+            display: flex;
+        }
+        &__image{
+            width: 169px;
+            height: 169px;
+            margin-right: 60px;
+        }
+        &__name{
+            color: #0D0D0D;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        &__subtitle{
+            font-weight: 500;
+            font-size: 14px;
+            color: #646464;
+        }
+        &__text{
+            margin-top: 10px;
+            color: #0D0D0D;
+            font-weight: 400;
+            font-size: 16px;
+            max-width: 680px;
+        }
+    }
+}
