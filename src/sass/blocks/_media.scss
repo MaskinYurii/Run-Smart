@@ -260,3 +260,44 @@
         display: none
     }
 }
+
+
+
+
+//  Modal windows
+
+@media(max-width: 480px){
+    .overlay .modal{
+        width: 320px;
+    }
+}
+@media(max-width: 420px){
+    .overlay .modal{
+        &__cancel{
+            display: none;
+        }
+    }
+}
+@media (max-width: 380px){
+    
+}
+@media (max-width: 320px){
+    .overlay .modal{
+        width: 220px;
+        min-height: 370px;
+    }
+    .overlay{
+        .feed-form {
+            margin: 0 auto;
+            &__input{
+                width: 90%;
+            }
+            .button_submit {
+                width: 90%;
+            }
+        }
+    }
+    button{
+        width: 200px;
+    }
+}

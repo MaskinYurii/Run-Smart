@@ -9,4 +9,12 @@
         line-height: 30px;
         max-width: 426px;
     }
+    .error{
+        border: 1px solid $main-color;
+    }
+    label.error{
+        color: #fff;
+        border: none;
+        margin-bottom: 15px;
+    }
 }

@@ -1,7 +1,7 @@
-
-// Carousel
-
 $(document).ready(function(){
+    
+    // Carousel
+    
     $('.carousel__init').slick({
         slidesToShow: 1,
         prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/left.svg" alt="slide"</button>',
@@ -55,7 +55,42 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn('slow');
         });
     })
-    $('.overlay').on('click', function() {
-        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
-    })
+
+    // Validate
+
+
+    function validateForms(form){
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите ваше имя",
+                    minlength: "Имя должно состоять от {0} символов",
+                },
+                phone: "Введите ваш номер телефона",
+                email: {
+                    required: "Введите вашу почту",
+                    email: "Некорректный адрес почты"
+                }
+            }
+        })
+    };
+    
+    validateForms('#consultation-form');
+    validateForms("#consultation form");
+    validateForms("#order form");
+
+    // Masked input
+
+    $("#phone").mask("+38(999)-999-99-99");
 });
