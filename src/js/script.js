@@ -6,7 +6,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/left.svg" alt="slide"</button>',
         nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/right.svg" alt="slide"</button>',
-        // autoplay: true,
+        autoplay: true,
         adaptiveHeight: true,
         responsive: [
             {
@@ -92,7 +92,7 @@ $(document).ready(function(){
 
     // Masked input
 
-    $("#phone").mask("+38(999)-999-99-99");
+    $("#phone, .modal #phone").mask("+38(999)-999-99-99");
 
     // Send mail
 
@@ -111,4 +111,30 @@ $(document).ready(function(){
         });
         return false;
     })
+
+    // Page up arrow
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600){
+            $('.page-up').fadeIn();
+        } else {
+            $('.page-up').fadeOut();
+        }
+    });
+
+    // smooth scroll
+    $("a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            const hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 200, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
+
+    // Wow.js connection
+    new WOW().init();
 });
