@@ -84,6 +84,12 @@
 }
 
 @media (max-width: 480px){
+    .page-up{
+        right: 20px;
+        bottom: 20px;
+        width: 20px;
+        height: 20px;
+    }
     .header{
         flex-direction: column;
         &__contact{
@@ -104,11 +110,10 @@
             justify-content: space-around;
         }
     }
-    }
     .title{
         font-size: 26px;
     }
-
+}
 @media (max-width: 380px){
     .header{
         &__contact{
@@ -277,9 +282,6 @@
             display: none;
         }
     }
-}
-@media (max-width: 380px){
-    
 }
 @media (max-width: 320px){
     .overlay .modal{
