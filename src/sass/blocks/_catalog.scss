@@ -129,7 +129,7 @@
             width: 50%;
             transform: translateX(0%);
             transition: 0.5s all;
-            padding-left: 19px;
+            padding: 0 19px;
             list-style-type: none;
             position: relative;
             margin-bottom: 0;
@@ -140,7 +140,7 @@
             li{
                 margin-bottom: 15px;
                 font-size: 14px;
-                font-weight: 300;
+                font-weight: 400;
                 position: relative;
                 &::before{
                     content: '';

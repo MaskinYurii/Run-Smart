@@ -1,0 +1,96 @@
+.overlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .65);
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    .modal{
+        background-color: #F2F2F2;
+        padding: 35px 25px 40px;
+        width: 382px;
+        min-height: 402px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &__cancel{
+            color: $main-color;
+            cursor: pointer;
+            font-size: 53px;
+            line-height: 13px;
+            position: absolute;
+            right: -45px;
+            top: 2px;
+
+        }
+        &__subtitle{
+            line-height: 19px;
+            font-size: 19px;
+            font-weight: 700;
+            text-align: center;
+            color: #0D0D0D;
+        }
+        &__descr{
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #0D0D0D;
+            font-weight: 700;
+        }
+        .feed-form{
+            margin: 0 auto;
+            margin-top: 27px;
+        }
+    }
+    #thanks{
+        min-height: 134px;
+        padding: 35px 65px;
+        .modal{
+            &__descr{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+#consultation, #order ,#thanks{
+    display: none;
+}
+
+@media(max-width: 480px){
+    .overlay .modal{
+        width: 320px;
+    }
+}
+@media(max-width: 420px){
+    .overlay .modal{
+        &__cancel{
+            display: none;
+        }
+    }
+}
+@media (max-width: 380px){
+    
+}
+@media (max-width: 320px){
+    .overlay .modal{
+        width: 220px;
+        min-height: 370px;
+    }
+    .overlay{
+        .feed-form {
+            margin: 0 auto;
+            &__input{
+                width: 90%;
+            }
+            .button_submit {
+                width: 90%;
+            }
+        }
+    }
+    button{
+        width: 200px;
+    }
+}
